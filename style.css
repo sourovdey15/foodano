@@ -1,0 +1,24 @@
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.upperMenu li::after{
+    content: '|';
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+}
+.upperMenu li:last-child::after{
+    content: '';
+}
+.loginBtn::after {
+    content: '/';
+    color: rgb(46, 46, 46);
+    padding-left: 10px;
+}
+/* Head Icon */
+.head-icon{
+    color: white;
+    background-color: #659833;
+    padding: 12px;
+    border-radius: 50%;
+}

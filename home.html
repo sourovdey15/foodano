@@ -1,14 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodano</title>
     <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Link  -->
+    <script src="https://kit.fontawesome.com/ea12aba3f5.js" crossorigin="anonymous"></script>
+    <!-- ----------- -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainColor: '#659833',
+                        hoverColor: '#fe9505',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
+
 <body>
-    <h1 class="font-bold text-center">Welcome</h1>
+    <!-- Upper Header -->
+    <img src="image/banner-4-1.jpg" alt="Header banner-4-1">
+    <div class=" bg-black">
+        <div class="container h-14 flex justify-between items-center text-white font-semibold">
+            <div>
+                <ul class="flex gap-5">
+                    <div class="dropdown">
+                        <li class="hover:text-hoverColor" tabindex="0" role="button">Language <i
+                                class="fa-solid fa-angle-down pl-2"></i></li>
+                        <ul tabindex="0"
+                            class="dropdown-content menu text-black bg-base-100 rounded-box z-1 w-44 p-2 mt-2 shadow-xl space-y-3">
+                            <li class="hover:text-hoverColor hover:underline">Bangla</li>
+                            <li class="hover:text-hoverColor hover:underline">English</li>
+                            <li class="hover:text-hoverColor hover:underline">Hindi</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <li class="hover:text-hoverColor" tabindex="0" role="button">Currency <i
+                                class="fa-solid fa-angle-down pl-2"></i></li>
+                        <ul tabindex="0"
+                            class="dropdown-content menu text-black bg-base-100 rounded-box z-1 w-44 p-2 mt-2 shadow-xl space-y-3">
+                            <li class="hover:text-hoverColor hover:underline">BDT</li>
+                            <li class="hover:text-hoverColor hover:underline">USD</li>
+                            <li class="hover:text-hoverColor hover:underline">INR</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <ul class="upperMenu flex gap-5 items-center ">
+                    <li class="hover:text-hoverColor"><i class="fa-solid fa-truck pr-2"></i>Track Your Order</li>
+                    <li class="hover:text-hoverColor"><i class="fa-solid fa-envelope pr-2"></i>Newsletter</li>
+                    <li class="hover:text-hoverColor">Contact Us</li>
+                    <li class="hover:text-hoverColor">FAQ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section -->
+    <header class="container flex justify-between items-center h-28">
+        <div>
+            <img src="image/sitelogo.png" alt="site logo">
+        </div>
+        <div class="font-bold space-y-2">
+            <h4>Mon-Fri 8:00 AM - 20:00 PM Satutday Closed</h4>
+            <h4>(+800) 111 2020, (+700) 333 44 555</h4>
+        </div>
+        <div>
+            <ul class="flex items-center gap-2 font-semibold">
+                <li class=""><i class="fa-solid fa-user head-icon hover:bg-hoverColor"></i></li>
+                <li class="loginBtn text-mainColor hover:text-hoverColor">login</li>
+                <li class="text-mainColor hover:text-hoverColor">Sign Up</li>
+                <li><i class="fa-solid fa-heart head-icon hover:bg-hoverColor"></i></li>
+                <li><i class="fa-solid fa-cart-shopping head-icon hover:bg-hoverColor"></i></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Menu Area -->
+    <nav class=" bg-[#659833] text-white font-semibold h-14">
+        <div class=" container flex items-center justify-between py-3">
+            <div>
+                <ul class="flex gap-4">
+                    <li class="hover:text-hoverColor ">Home <i class="fa-solid fa-angle-down pl-1"></i></li>
+                    <li class="hover:text-hoverColor ">Shop <i class="fa-solid fa-angle-down pl-1"></i></li>
+                    <li class="hover:text-hoverColor ">Blog <i class="fa-solid fa-angle-down pl-1"></i></li>
+                    <li class="hover:text-hoverColor ">Pages <i class="fa-solid fa-angle-down pl-1"></i></li>
+                    <li class="hover:text-hoverColor ">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <div class="join">
+                    <div>
+                        <div>
+                            <input class="input join-item" placeholder="Search" />
+                        </div>
+                    </div>
+                    <div class="indicator">
+                        <button class="btn join-item bg-red-500">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Script -->
+
 </body>
+
 </html>
