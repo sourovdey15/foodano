@@ -85,7 +85,7 @@
             </ul>
         </div>
         <div class="flex lg:hidden">
-            <div class="drawer drawer-end">
+            <div class="drawer drawer-end z-20">
                 <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                     <!-- Page content here -->
@@ -112,11 +112,11 @@
     <nav class=" bg-[#659833] text-white font-semibold ">
         <div class=" container flex items-center justify-between py-3">
             <div class=" ">
-                <ul class="flex gap-4 ">
-                    <li class=" ">Home <i class="fa-solid fa-angle-down pl-1"></i></li>
-                    <li class=" ">Shop <i class="fa-solid fa-angle-down pl-1"></i></li>
-                    <li class=" ">Blog <i class="fa-solid fa-angle-down pl-1"></i></li>
-                    <li class=" ">Pages <i class="fa-solid fa-angle-down pl-1"></i></li>
+                <ul class="flex gap-6 ">
+                    <li class=" ">Home </li>
+                    <li class=" ">Shop</li>
+                    <li class=" ">Blog</li>
+                    <li class=" ">Pages</li>
                     <li class="">Contact Us</li>
                 </ul>
             </div>
@@ -133,29 +133,251 @@
     </nav>
     <!-- Header Banner Area -->
     <section class="banner">
-        <div class="hero h-[360px]"
-            style="background-image: url(/image/banner.jpg);">
+        <div class="hero h-[380px]" style="background-image: url(image/banner.jpg);">
             <div class="hero-overlay"></div>
-            <div class="text-font ">
-                 <h1 class="font-bold text-3xl"> TEst</h1>
+            <div class="invisible lg:visible bg-white w-80 h-[380px] text-gray-800 -ml-[70%]">
+                <h1 class="font-bold text-[16px] bg-[#dadada] py-4 pl-6">
+                    <i class="fa-solid fa-angles-down pr-2 text-[16px]"></i>ALL Categories
+                </h1>
+                <div class="font-bold text-[16px] py-2 pl-6  ">
+                    <ul class="space-y-4">
+                        <li class="flex items-center group relative"> Fresh Vegetables
+                            <i class="fa-solid fa-angle-down ml-[40%] group-hover:-rotate-90"></i>
+                            <div
+                                class="z-10 absolute left-full w-40 top-0 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                <div class="py-1">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        1</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex items-center group relative"> Milk & Ice Creams
+                            <i class="fa-solid fa-angle-down ml-[37%] group-hover:-rotate-90"></i>
+                            <div
+                                class="z-10 absolute left-full w-40 top-0 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                <div class="py-1">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        1</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex items-center group relative"> Fresh Juice
+                            <i class="fa-solid fa-angle-down ml-[55%] group-hover:-rotate-90"></i>
+                            <div
+                                class="z-10 absolute left-full w-40 top-0 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                <div class="py-1">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        1</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex items-center group relative"> Ocean Foods
+                            <i class="fa-solid fa-angle-down ml-[50%] group-hover:-rotate-90"></i>
+                            <div
+                                class="z-10 absolute left-full w-40 top-0 bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                                <div class="py-1">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        1</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                        3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li> Seeds & Spies</li>
+                        <li> Sandwich</li>
+                        <li> Canned Food</li>
+                        <li> Wraps & Rolls</li>
+                    </ul>
+                </div>
             </div>
-            <div class="hero-content text-neutral-content text-left">
+            <div class="hero-content text-neutral-content ">
                 <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <h1 class="mb-5 text-5xl font-bold">Organic & Healthy
+                        Vegan Food</h1>
                     <p class="mb-5">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
-                    <button class="btn bg-mainColor">Get Started</button>
+                    <button class="btn bg-mainColor py-4 px-10 border-0 rounded-full">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main ">
+        <div class="container shadow-xl my-24">
+            <div class="flex flex-col lg:flex-row items-center gap-10 justify-center py-20">
+                <!-- Card Area -->
+                <div class="card card-side bg-base-100 shadow-sm flex items-center group">
+                    <div class="relative w-20 h-20">
+                        <div
+                            class="absolute inset-0 border-4 border-dotted border-mainColor rounded-full spin-slow group-hover:bg-mainColor group-hover:border-white">
+                        </div>
+                        <div class="flex items-center justify-center w-full h-full">
+                            <i class="fa-solid fa-truck text-mainColor text-4xl p-3 z-10 group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl font-bold">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-sm flex items-center group">
+                    <div class="relative w-20 h-20">
+                        <div
+                            class="absolute inset-0 border-4 border-dotted border-mainColor rounded-full spin-slow group-hover:bg-mainColor group-hover:border-white">
+                        </div>
+                        <div class="flex items-center justify-center w-full h-full">
+                            <i
+                                class="fa-solid fa-shield-virus text-mainColor text-4xl p-3 z-10 group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl font-bold">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-sm flex items-center group ">
+                    <div class="relative w-20 h-20 ">
+                        <div
+                            class="absolute inset-0 border-4 border-dotted border-mainColor rounded-full spin-slow  group-hover:bg-mainColor group-hover:border-white ">
+                        </div>
+                        <div class="flex items-center justify-center w-full h-full ">
+                            <i class="fa-solid fa-sack-dollar text-mainColor text-4xl group-hover:text-white z-10"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-2xl font-bold">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section  -->
+    <section class="mb-20">
+        <div class="container flex flex-col lg:flex-row items-center gap-5 justify-around">
+            <!-- Image Area 1 -->
+            <div class=" hero w-96 h-72  "
+                style="background-image: url(image/banner-1.jpg); background-repeat: no-repeat;  ">
+                <div class="hero-content flex flex-col items-start justify-center">
+                    <h1 class="font-bold text-2xl">We Offer Premium & 100%
+                        Organic Food</h1>
+                    <h2><a href="#" class="font-bold text-xl text-mainColor hover:text-hoverColor underline">Shop
+                            Now</a></h2>
+                </div>
+
+            </div>
+            <!-- Image Area 1 -->
+            <div class=" hero w-96 h-72  "
+                style="background-image: url(image/banner-2.jpg); background-repeat: no-repeat;">
+                <div class="hero-content flex flex-col items-start justify-center">
+                    <h4 class="font-semibold text-xl text-gray-600">Special recipe</h4>
+                    <h1 class="font-bold text-2xl text-mainColor">Fruits Taste</h1>
+                    <h4 class="font-semibold text-xl text-black">Made with meat, vegetables
+                        and cheese</h4>
+                </div>
+
+            </div>
+            <!-- Image Area 1 -->
+            <div class=" hero w-96 h-72 "
+                style="background-image: url(image/banner-1.jpg); background-repeat: no-repeat;">
+                <div class="hero-content flex flex-col items-start justify-center">
+                    <h1 class="font-bold text-2xl text-mainColor">Sale Off 30%</h1>
+                    <h4 class="font-semibold text-xl text-black">All Chocolate Products that Your Need</h4>
+                    <button class="btn bg-mainColor text-white py-2 px-6 rounded-full">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hot Deals area -->
+    <section>
+        <div class="container flex gap-5">
+            <!-- Hot Deal Image -->
+            <div class="ad ">
+                <img src="image/hotdeals.jpg" alt="hotdeals">
+            </div>
+            <!-- Hot Deal Content -->
+            <div>
+                <!-- Hot Deal Title and timer -->
+                <div class="flex gap-5 justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold "> Hot Deals</h2>
+                    </div>
+                    <!-- Timer -->
+                    <div>
+                        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:15;" aria-live="polite" aria-label="15">15</span>
+                                </span>
+                                <span class="text-sm">days</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
+                                </span>
+                                <span class="text-sm">hours</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
+                                </span>
+                                <span class="text-sm">min</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:59;" aria-live="polite" aria-label="59">59</span>
+                                </span>
+                                <span class="text-sm">sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold "> Hot Deals</h2>
+                    </div>
+                </div>
+                <!-- Product Card Area -->
+                <div class="my-5 ">
+                    <!-- Card 01 -->
+                    <div class="card bg-base-100 w-72 shadow-sm border border-gray-200">
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_1.png" alt="Shoes" class="rounded-xl scale-110  " />
+                        </figure>
+                        <div class="pt-2 space-y-1  text-center bg-slate-300">
+                            <h2 class="card-title font-bold flex justify-center">Card Title</h2>
+                            <p class="text-gray-600 font-semibold">$10.00</p>
+                            <div class="rating rating-xs ">
+                                <input type="radio" name="rating-10" class="rating-hidden " aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="2 star"
+                                    checked="checked" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="3 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="4 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="5 star" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Script -->
     <script src="js/home.js"></script>
-
 </body>
 
 </html>
