@@ -13,7 +13,6 @@ menuItems.forEach(function(item){
 });
 
 
-
 // button style
 document.querySelectorAll('button').forEach(button => {
   // Wrap inner content in a <span> to handle layering
@@ -25,3 +24,5 @@ document.querySelectorAll('button').forEach(button => {
   // Add the class for the hover effect
   button.classList.add('circle-hover-effect');
 });
+
+// Product Cart Hover Style

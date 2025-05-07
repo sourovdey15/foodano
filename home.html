@@ -294,7 +294,7 @@
             </div>
             <!-- Image Area 1 -->
             <div class=" hero w-96 h-72 "
-                style="background-image: url(image/banner-1.jpg); background-repeat: no-repeat;">
+                style="background-image: url(image/banner-3.jpg); background-repeat: no-repeat;">
                 <div class="hero-content flex flex-col items-start justify-center">
                     <h1 class="font-bold text-2xl text-mainColor">Sale Off 30%</h1>
                     <h4 class="font-semibold text-xl text-black">All Chocolate Products that Your Need</h4>
@@ -305,17 +305,17 @@
     </section>
     <!-- Hot Deals area -->
     <section>
-        <div class="container flex gap-5">
+        <div class="container flex flex-col lg:flex-row items-center gap-10 justify-center">
             <!-- Hot Deal Image -->
             <div class="ad ">
                 <img src="image/hotdeals.jpg" alt="hotdeals">
             </div>
             <!-- Hot Deal Content -->
-            <div>
+            <div class=" ">
                 <!-- Hot Deal Title and timer -->
-                <div class="flex gap-5 justify-between">
+                <div class="flex flex-col md:flex-row items-center gap-5 justify-between">
                     <div>
-                        <h2 class="text-3xl font-bold "> Hot Deals</h2>
+                        <h2 class="text-4xl font-bold "> Hot Deals</h2>
                     </div>
                     <!-- Timer -->
                     <div>
@@ -346,28 +346,145 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-3xl font-bold "> Hot Deals</h2>
+                    <div class="flex gap-6">
+                        <i class="fa-solid fa-angles-left bg-mainColor p-3 rounded-full text-white hover:bg-hoverColor"></i>
+                        <i class="fa-solid fa-angles-right bg-mainColor p-3 rounded-full text-white hover:bg-hoverColor"></i>
                     </div>
                 </div>
                 <!-- Product Card Area -->
-                <div class="my-5 ">
+                <div class="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <!-- Card 01 -->
-                    <div class="card bg-base-100 w-72 shadow-sm border border-gray-200">
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
                         <figure class="px-4 pt-4">
-                            <img src="image/products/product_1.png" alt="Shoes" class="rounded-xl scale-110  " />
+                            <img src="image/products/product_1.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
                         </figure>
-                        <div class="pt-2 space-y-1  text-center bg-slate-300">
-                            <h2 class="card-title font-bold flex justify-center">Card Title</h2>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                            <div class="w-56 p-2 rounded-full bg-white shadow-md">
+                                <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                    <li><i class="fa-solid fa-cart-shopping   cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-gray-300 space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Card Title</h2>
                             <p class="text-gray-600 font-semibold">$10.00</p>
-                            <div class="rating rating-xs ">
-                                <input type="radio" name="rating-10" class="rating-hidden " aria-label="clear" />
-                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="1 star" />
-                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="2 star"
-                                    checked="checked" />
-                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="3 star" />
-                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="4 star" />
-                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor" aria-label="5 star" />
+
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 01 -->
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_1.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                            <div class="w-56 p-2 rounded-full bg-white shadow-md">
+                                <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                    <li><i class="fa-solid fa-cart-shopping   cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-gray-300 space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Card Title</h2>
+                            <p class="text-gray-600 font-semibold">$10.00</p>
+
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 01 -->
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_1.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                            <div class="w-56 p-2 rounded-full bg-white shadow-md">
+                                <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                    <li><i class="fa-solid fa-cart-shopping   cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                    </li>
+                                    <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-gray-300 space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Card Title</h2>
+                            <p class="text-gray-600 font-semibold">$10.00</p>
+
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
                             </div>
                         </div>
                     </div>
@@ -375,6 +492,17 @@
             </div>
         </div>
     </section>
+    <div class="teste  group my-10">
+
+    </div>
+
+    <div class="relative   my-10  p-10">
+        <!-- Floating Icon Bar -->
+
+
+
+    </div>
+
 
     <!-- Script -->
     <script src="js/home.js"></script>
