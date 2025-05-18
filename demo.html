@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+  <!-- Tailwind and Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Link  -->
+  <script src="https://kit.fontawesome.com/ea12aba3f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="relative">
+    <!-- Navigation Arrows -->
+    <div class="flex justify-end gap-6 mb-4">
+      <button id="slideLeft"
+        class="fa-solid fa-angles-left bg-blue-500 p-3 rounded-full text-white hover:bg-blue-600"></button>
+      <button id="slideRight"
+        class="fa-solid fa-angles-right bg-blue-500 p-3 rounded-full text-white hover:bg-blue-600"></button>
+    </div>
+
+    <!-- Slider Container -->
+    <div id="productSlider" class="flex gap-5 overflow-x-auto scroll-smooth">
+      <!-- Repeatable Card Item -->
+      <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card pCard bg-base-100 w-[260px] shadow-sm border border-gray-200 group relative overflow-hidden hover:border-mainColor">
+                        <!-- Product Image -->
+                        <figure class="px-4 pt-4">
+                            <img src="image/products/product_3.png" alt="Shoes"
+                                class="rounded-xl transform scale-110 group-hover:scale-125 transition duration-500 ease-in-out" />
+                        </figure>
+                        <!-- Floating Action Buttons (between image and details) -->
+                        <div
+                            class="absolute left-1/2 top-[62%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 w-56 p-2 rounded-full bg-white shadow-md">
+                            <ul class="flex gap-4 justify-center text-gray-600 text-lg">
+                                <li class="searchCart"><i
+                                        class="fa-solid fa-cart-shopping  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-search cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-regular fa-heart  cursor-pointer transition"></i>
+                                </li>
+                                <li><i class="fa-solid fa-layer-group cursor-pointer transition"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="pt-4 pb-5 px-4 text-center bg-[#f5f6fb] space-y-1">
+                            <h2 class="card-title font-bold text-lg justify-center">Black Beans</h2>
+                            <p class="text-gray-600 font-semibold">$ <span>20.00</span></p>
+                            <!-- Rating -->
+                            <div class="rating rating-xs justify-center">
+                                <input type="radio" name="rating-10" class="rating-hidden" aria-label="clear" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="1 star" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="2 stars" checked />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="3 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="4 stars" />
+                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-mainColor"
+                                    aria-label="5 stars" />
+                            </div>
+                        </div>
+                    </div>s
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const slider = document.getElementById('productSlider');
+    const slideLeft = document.getElementById('slideLeft');
+    const slideRight = document.getElementById('slideRight');
+
+    slideLeft.addEventListener('click', () => {
+      slider.scrollBy({
+        left: -300,
+        behavior: 'smooth'
+      });
+    });
+
+    slideRight.addEventListener('click', () => {
+      slider.scrollBy({
+        left: 300,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+  <script src="js/common.js"></script>
+</body>
+
+</html>
