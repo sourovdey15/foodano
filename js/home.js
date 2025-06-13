@@ -91,7 +91,7 @@ document.getElementById('cartContents').addEventListener('click', function (e) {
 const allItemsInfo = document.getElementsByClassName('itemsInfo');
 const popUpContainer = document.getElementById('productInfo');
 const dynamicProductInfo = document.createElement('div');
-let dynamicItemCount = 0;
+let dynamicItemCount = 1;
 for (const itemsInfo of allItemsInfo) {
   itemsInfo.addEventListener('click', function (event) {
     // Getting Product Info
@@ -106,7 +106,7 @@ for (const itemsInfo of allItemsInfo) {
                         </div>
                         <div class="flex-1 space-y-4">
                             <h3 class="text-3xl font-bold">${productName}</h3>
-                            <h4 id="dynamicProductPrice" class="text-xl font-bold">$ <span>${productPrice}</span></h4>
+                            <h4  class="text-xl font-bold">$ <span id="dynamicProductPrice">${productPrice}</span></h4>
                             <div>
                                 <ul class="space-y-3">
                                     <li><i class="fa-solid fa-check text-mainColor pr-2"></i>Unrestrained And portable active streo</li>
@@ -132,25 +132,35 @@ for (const itemsInfo of allItemsInfo) {
     // Call The PopUp
     my_modal_3.showModal()
     // Increase Item Count
-    const itemPlus = document.getElementsByClassName('itemPlusMinus')
+    const itemPlus = document.getElementsByClassName('itemPlusMinus');
     for (const items of itemPlus) {
       items.addEventListener('click', function (event) {
         if (event.target.classList.contains('fa-angle-up')) {
           dynamicItemCount = dynamicItemCount + 1;
           // Get and Set Value of Product Item Count
+          
           const itemValue = getValue("productInfoItemCount")
           setInnerTxt("productInfoItemCount", dynamicItemCount);
+
+          // Update Product Cost
+          const dynamicProductPrice = getValue('dynamicProductPrice')
+          console.log(typeof dynamicProductPrice)
+          setInnerTxt('dynamicProductPrice', dynamicProductPrice + parseFloat(productPrice))
+
         };
         if (event.target.classList.contains('fa-angle-down')) {
           if (dynamicItemCount <= 1) {
-            alert('Only One Product')
+            alert('Only One Product Left')
             return;
           }
           else {
             dynamicItemCount = dynamicItemCount - 1;
             // Get and Set Value of Product Item Count
-            const itemValue = getValue("productInfoItemCount")
+            const itemValue = getValue("productInfoItemCount");
             setInnerTxt("productInfoItemCount", dynamicItemCount);
+            // Update Product Cost
+            const dynamicProductPrice = getValue('dynamicProductPrice');
+            setInnerTxt('dynamicProductPrice', dynamicProductPrice - parseFloat(productPrice).toFixed(2));
           };
         };
       });
